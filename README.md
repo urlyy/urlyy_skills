@@ -6,27 +6,27 @@
 
 ## 技能目录
 
-| 技能 | 简介 | 使用场景 |
-| --- | --- | --- |
-| [sloptrim-zh](sloptrim-zh/SKILL.md) | 中文去 AI 味，保留事实与作者声音 | 润色文章、邮件、报告 |
-| [ste-writing](ste-writing/SKILL.md) | 用简化技术英语改善表达 | 英文技术文档、README、错误消息 |
-| [grill](grill/SKILL.md) | 通过分轮追问找出需求盲点 | 想法不清晰、方案压力测试 |
-| [architect](architect/SKILL.md) | 比较技术栈并推荐方案 | 框架、数据库、部署选型 |
-| [prove-it](prove-it/SKILL.md) | 用可验证证据证明交付 | 验收、重复错误、测试质量 |
-| [to-spec](to-spec/SKILL.md) | 将已有讨论整理成规格说明 | 需求讨论结束，准备开发 |
-| [to-tickets](to-tickets/SKILL.md) | 拆分可验证的纵向任务与依赖 | 大型功能分解、任务排期 |
-| [implement](implement/SKILL.md) | 依据规格或任务实现功能 | 需求明确后的编码执行 |
-| [implement-spec](implement-spec/SKILL.md) | 按规格说明和拆分好的任务编写代码 | 承接 to-spec 和 to-tickets |
-| [tdd](tdd/SKILL.md) | 以测试驱动功能实现 | 先写失败测试再实现功能 |
-| [diagnosing-bugs](diagnosing-bugs/SKILL.md) | 用复现与实验定位问题 | 疑难 bug、性能退化 |
-| [code-review](code-review/SKILL.md) | 按项目规范和原始需求审查 | PR、分支或未提交变更评审 |
-| [pr](pr/SKILL.md) | 编写便于评审的 PR 描述 | 提交合并请求前 |
-| [retro](retro/SKILL.md) | 总结编码过程中的经验 | 阶段结束、改进协作流程 |
-| [wait-what](wait-what/SKILL.md) | 换一种方式解释上一条回答 | 回答难懂或没有讲到重点 |
-| [handoff](handoff/SKILL.md) | 整理工作进展，方便下一次会话接着做 | 换会话或交给另一个代理 |
-| [writing-for-agents](writing-for-agents/SKILL.md) | 编写清楚可执行的代理指令 | 维护技能、AGENTS.md 和 CLAUDE.md |
-| [eli5](eli5/SKILL.md) | 用简短文字和 HTML 图示解释概念 | 学习陌生概念、给非专业人士讲解 |
-| [html-plan](html-plan/SKILL.md) | 生成可交互的 HTML 实施方案 | 开发前审阅设计和决策 |
+| 技能 | 简介 | 使用场景 | 来源 |
+| --- | --- | --- | --- |
+| [sloptrim-zh](sloptrim-zh/SKILL.md) | 中文去 AI 味，保留事实与作者声音 | 润色文章、邮件、报告 | [链接](https://github.com/ismilewolf-eng/sloptrim-zh) |
+| [ste-writing](ste-writing/SKILL.md) | 用简化技术英语改善表达 | 英文技术文档、README、错误消息 | [链接](https://github.com/woosal1337/blog/blob/main/videos/ep01-the-cure-for-ai-slop/ste-writing-skill.md) |
+| [grill](grill/SKILL.md) | 通过分轮追问找出需求盲点 | 想法不清晰、方案压力测试 | [链接](https://github.com/nagi-studio/skills/tree/main/skills/pondering/grill) |
+| [architect](architect/SKILL.md) | 比较技术栈并推荐方案 | 框架、数据库、部署选型 | [链接](https://github.com/nagi-studio/skills/tree/main/skills/rookie/architect) |
+| [prove-it](prove-it/SKILL.md) | 用可验证证据证明交付 | 验收、重复错误、测试质量 | [链接](https://github.com/nagi-studio/skills/tree/main/skills/rookie/prove-it) |
+| [to-spec](to-spec/SKILL.md) | 将已有讨论整理成规格说明 | 需求讨论结束，准备开发 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-spec) |
+| [to-tickets](to-tickets/SKILL.md) | 拆分可验证的纵向任务与依赖 | 大型功能分解、任务排期 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-tickets) |
+| [implement](implement/SKILL.md) | 依据规格或任务实现功能 | 需求明确后的编码执行 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/implement) |
+| [implement-spec](implement-spec/SKILL.md) | 按规格说明和拆分好的任务编写代码 | 承接 to-spec 和 to-tickets | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/implement-spec) |
+| [tdd](tdd/SKILL.md) | 以测试驱动功能实现 | 先写失败测试再实现功能 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/tdd) |
+| [diagnosing-bugs](diagnosing-bugs/SKILL.md) | 用复现与实验定位问题 | 疑难 bug、性能退化 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/diagnosing-bugs) |
+| [code-review](code-review/SKILL.md) | 按项目规范和原始需求审查 | PR、分支或未提交变更评审 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review) |
+| [pr](pr/SKILL.md) | 编写便于评审的 PR 描述 | 提交合并请求前 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/pr) |
+| [retro](retro/SKILL.md) | 总结编码过程中的经验 | 阶段结束、改进协作流程 | [链接](https://github.com/mattpocock/skills/tree/main/skills/engineering/retro) |
+| [wait-what](wait-what/SKILL.md) | 换一种方式解释上一条回答 | 回答难懂或没有讲到重点 | [链接](https://github.com/mattpocock/skills/tree/main/skills/productivity/wait-what) |
+| [handoff](handoff/SKILL.md) | 整理工作进展，方便下一次会话接着做 | 换会话或交给另一个代理 | [链接](https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff) |
+| [writing-for-agents](writing-for-agents/SKILL.md) | 编写清楚可执行的代理指令 | 维护技能、AGENTS.md 和 CLAUDE.md | [链接](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents) |
+| [eli5](eli5/SKILL.md) | 用简短文字和 HTML 图示解释概念 | 学习陌生概念、给非专业人士讲解 | [链接](https://github.com/anthropics/claude-plugins-community/tree/main/eli5/skills/eli5) |
+| [html-plan](html-plan/SKILL.md) | 生成可交互的 HTML 实施方案 | 开发前审阅设计和决策 | [链接](https://github.com/anthropics/claude-plugins-community/tree/main/html-plan/skills/html-plan) |
 
 ## 快速开始
 
