@@ -1,0 +1,19 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Runtime and temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+.scratch/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
