@@ -1,6 +1,6 @@
 # urlyy_skills
 
-These are the 19 agent skills I selected for this repository. They help with writing, clarifying requirements, developing software and explaining concepts visually. Each skill has its own folder at the root, with a `SKILL.md` entry point and the scripts, templates and references it needs.
+These are the 20 agent skills I selected for this repository. They help with writing, clarifying requirements, developing software and explaining concepts visually. Each skill has its own folder at the root, with a `SKILL.md` entry point and the scripts, templates and references it needs.
 
 [中文](README.md)
 
@@ -25,6 +25,7 @@ These are the 19 agent skills I selected for this repository. They help with wri
 | [wait-what](wait-what/SKILL.md) | Re-explain the previous answer | An explanation did not land | [Link](https://github.com/mattpocock/skills/tree/main/skills/productivity/wait-what) |
 | [handoff](handoff/SKILL.md) | Document progress so another chat or agent can continue | Switching chats or agents | [Link](https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff) |
 | [writing-for-agents](writing-for-agents/SKILL.md) | Write actionable instructions for agents | Skills, AGENTS.md and CLAUDE.md | [Link](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents) |
+| [tune-agents-md](tune-agents-md/SKILL.md) | Draft, audit or refine AGENTS.md | Durable rules, permission boundaries and recurring corrections | [Reference video](https://www.bilibili.com/video/BV13a4x6hEc1/) |
 | [eli5](eli5/SKILL.md) | Explain concepts with simple text and HTML visuals | Learning unfamiliar concepts | [Link](https://github.com/anthropics/claude-plugins-community/tree/main/eli5/skills/eli5) |
 | [html-plan](html-plan/SKILL.md) | Create an interactive HTML implementation plan | Reviewing design decisions before coding | [Link](https://github.com/anthropics/claude-plugins-community/tree/main/html-plan/skills/html-plan) |
 
@@ -46,6 +47,16 @@ These are the 19 agent skills I selected for this repository. They help with wri
 
 The implementation skills overlap; usually select one. Some upstream workflows include commits, issue publishing and configuration changes. Specify the authorized scope when invoking them.
 
+### Choosing a skill after a session
+
+If a session went wrong and you're unsure what to change, use [retro](retro/SKILL.md). It reviews the session and ranks suggested improvements by severity. If you want the agent to edit a skill, add a test, or wire up a check, say what it can change in your prompt.
+
+> Use `retro` to review this session and point out what went wrong. Where the evidence is clear, update the relevant skill in this project or add a regression test. Run the relevant checks afterward.
+
+If a feature is done and you want to record how to maintain it in `AGENTS.md`, go straight to [tune-agents-md](tune-agents-md/SKILL.md). Link to an existing design doc and say when to read it.
+
+> Use `tune-agents-md` to review this session, the requirements, and the code changes. Write down the conventions future maintainers will need in the nearest `AGENTS.md` that applies to the code. Say when each rule applies, what to do, and how to check the result. If there's a design doc, give its path and say when to read it.
+
 ## Dependencies and requirements
 
 - `to-spec`, `to-tickets`, `implement-spec` and `code-review` bundle the upstream setup workflow and templates under `references/setup/`. These guides are loaded when project configuration is missing and are not separate discoverable skills.
@@ -55,12 +66,13 @@ The implementation skills overlap; usually select one. Some upstream workflows i
 
 ## Sources
 
-This collection uses skills from the following projects. Thanks to their authors:
+This collection draws on the following skills and references. Thanks to their authors:
 
 - [sloptrim-zh](https://github.com/ismilewolf-eng/sloptrim-zh)
 - [ste-writing](https://github.com/woosal1337/blog/blob/main/videos/ep01-the-cure-for-ai-slop/ste-writing-skill.md)
 - [Nagi Studio Skills](https://github.com/nagi-studio/skills)
 - [Matt Pocock Skills](https://github.com/mattpocock/skills)
 - [Claude Plugins Community](https://github.com/anthropics/claude-plugins-community) (eli5, html-plan)
+- [主题学习社 · 如何写好 Agents.md](https://www.bilibili.com/video/BV13a4x6hEc1/) (reference video for tune-agents-md)
 
-Skills retain their original licenses. The root MIT license applies to documentation and maintenance contributions added in this repository.
+Skills retain their original licenses. The root MIT license applies to this repository's original skills, documentation and maintenance contributions.

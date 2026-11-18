@@ -1,6 +1,6 @@
 # urlyy_skills
 
-这里收集了我选用的 19 个 AI Agent 技能，用于写作、理清需求、开发软件和制作图解。每个技能占一个根目录文件夹，入口是 `SKILL.md`，所需脚本、模板和参考资料都放在其中。
+这里收集了我选用的 20 个 AI Agent 技能，用于写作、理清需求、开发软件和制作图解。每个技能占一个根目录文件夹，入口是 `SKILL.md`，所需脚本、模板和参考资料都放在其中。
 
 [English](README.en.md)
 
@@ -25,6 +25,7 @@
 | [wait-what](wait-what/SKILL.md) | 换一种方式解释上一条回答 | 回答难懂或没有讲到重点 | [链接](https://github.com/mattpocock/skills/tree/main/skills/productivity/wait-what) |
 | [handoff](handoff/SKILL.md) | 整理工作进展，方便下一次会话接着做 | 换会话或交给另一个代理 | [链接](https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff) |
 | [writing-for-agents](writing-for-agents/SKILL.md) | 编写清楚可执行的代理指令 | 维护技能、AGENTS.md 和 CLAUDE.md | [链接](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents) |
+| [tune-agents-md](tune-agents-md/SKILL.md) | 起草、审阅或优化 AGENTS.md | 整理长期规则、授权边界和反复纠正的问题 | [参考视频](https://www.bilibili.com/video/BV13a4x6hEc1/) |
 | [eli5](eli5/SKILL.md) | 用简短文字和 HTML 图示解释概念 | 学习陌生概念、给非专业人士讲解 | [链接](https://github.com/anthropics/claude-plugins-community/tree/main/eli5/skills/eli5) |
 | [html-plan](html-plan/SKILL.md) | 生成可交互的 HTML 实施方案 | 开发前审阅设计和决策 | [链接](https://github.com/anthropics/claude-plugins-community/tree/main/html-plan/skills/html-plan) |
 
@@ -46,6 +47,16 @@
 
 `implement` 与 `implement-spec` 是两种相近的入口，通常选一个即可。上游部分流程包含提交代码、发布 issue、修改配置等操作，使用时应说明允许的范围。
 
+### 会话结束后用哪个技能
+
+会话里出了错，还不知道该改哪儿，就用 [retro](retro/SKILL.md)。它会复盘这次会话，按严重程度列出改进建议。想让 Agent 直接改技能、补测试或接入校验，就在提示词里说清楚可以改哪些地方。
+
+> 用 `retro` 复盘当前会话，指出哪些地方做错了。有明确证据的，就在当前项目里改对应的技能或补回归测试，改完跑相关检查。
+
+新功能做完后，想把以后的维护约定写进 `AGENTS.md`，就直接用 [tune-agents-md](tune-agents-md/SKILL.md)。
+
+> 用 `tune-agents-md` 回看这次会话、需求和代码改动。把以后维护这个功能时还用得上的约定，写进离相关代码最近的 `AGENTS.md`。写清什么时候要做、怎么做、怎么验证。
+
 ## 依赖与运行环境
 
 - `to-spec`、`to-tickets`、`implement-spec`、`code-review` 内置 `references/setup/`，保留上游配置流程和模板，缺少项目配置时按需读取。子依赖不使用 `SKILL.md`，不会新增独立技能。
@@ -55,12 +66,13 @@
 
 ## 来源
 
-本仓库选用了以下项目的技能，感谢原作者：
+本仓库选用了以下项目的技能，并参考了相关资料，感谢原作者：
 
 - [sloptrim-zh](https://github.com/ismilewolf-eng/sloptrim-zh)
 - [ste-writing](https://github.com/woosal1337/blog/blob/main/videos/ep01-the-cure-for-ai-slop/ste-writing-skill.md)
 - [Nagi Studio Skills](https://github.com/nagi-studio/skills)
 - [Matt Pocock Skills](https://github.com/mattpocock/skills)
 - [Claude Plugins Community](https://github.com/anthropics/claude-plugins-community)（eli5、html-plan）
+- [主题学习社 · 如何写好 Agents.md](https://www.bilibili.com/video/BV13a4x6hEc1/)（tune-agents-md 的参考视频）
 
-各技能保留原有许可；根目录 MIT 许可适用于本仓库新增的文档和维护内容。
+各技能保留原有许可；根目录 MIT 许可适用于本仓库原创的技能、文档和维护内容。
